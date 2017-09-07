@@ -1,0 +1,79 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body, html {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	overflow-y: auto;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #545454;
+	background: #F7F7F7;
+	padding: 0.5em;
+}
+
+textarea {
+	height: 100%;
+	width: 45%;
+	overflow-x: scroll;
+}
+
+#tabs ul {
+	padding: 0px;
+	margin: 0px;
+	margin-left: 10px;
+	list-style-type: none;
+}
+
+#tabs ul li {
+	display: inline-block;
+	clear: none;
+	float: left;
+	height: 16px;
+}
+
+#tabs ul li a {
+	line-height: 16px;
+	font-size: 16px;
+
+	position: relative;
+	margin-top: 16px;
+	display: block;
+	margin-left: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background: #f6f6f6;
+	z-index: 9999;
+	border: 1px solid #ccc;
+	border-bottom: 0px;
+	-moz-border-radius-topleft: 4px;
+	border-top-left-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	border-top-right-radius: 4px;
+	width: auto;
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#tabs ul li a:hover {
+	text-decoration: underline;
+}
+
+#tabs #Content_Area {
+	padding: 0 15px;
+	clear:both;
+	overflow:hidden;
+	line-height:19px;
+	position: relative;
+	top: 20px;
+	z-index: 5;
+	height: 150px;
+	overflow: hidden;
+}
+
+p { padding-left: 15px; }

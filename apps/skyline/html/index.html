@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+	<title>My cool Skyline Chrome App</title>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/logic.js"></script>
+	<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<textarea id="taView" rows="9">foo bar
+test area
+abc 123</textarea>
+<textarea id="taPreview" rows="9" readonly>foo bar
+test area
+abc 123</textarea>
+	<br/>
+	<button id="pbApply">apply</button>
+	<button id="pbPreview">preview</button>
+
+	<div id="tabs">
+		<ul>
+			<li id="tabInsertDelete"><a>Insert / Delete</a></li>
+			<li id="tabWhitespace"><a>Whitespace</a></li>
+		</ul>
+		<div id="Content_Area">
+			<div id="paneInsertDelete">
+				
+				<input id="rbInsertDeleteInsert" type="radio" name="rbAction" value="insert" checked="true">insert</input>
+				<input id="tfInsertDeleteInsertWhat" value="foo"/>at
+				<input id="nfInsertDeleteInsertAt" type="number" value="3"/>
+				<br>
+
+				<input id="rbInsertDeleteDelete" type="radio" name="rbAction" value="delete">delete</input>
+				<input id="nfInsertDeleteDeleteFrom" type="number" value="0"/>to
+				<input id="nfInsertDeleteDeleteTo" type="number" value="1"/>
+			</div>
+
+			<div id="paneWhitespace" style="display: none;">
+				<input id="rbWhitespaceTrim" type="radio" name="rbAction" value="trim">trim</input>
+				at front
+				<input id="cbWhitespaceFront" type="checkbox" value="at front" checked="true" />, middle
+				<input id="cbWhitespaceMiddle" type="checkbox" value="in the middle" checked="true"/>, back
+				<input id="cbWhitespaceBack" type="checkbox" value="at the back" checked="true"/>.
+				
+			</div>
+		</div>
+	</div>
+	
+	
+</body>
+</html>

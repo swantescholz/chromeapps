@@ -1,0 +1,15 @@
+{
+  "name": "Skyline",
+  "description": "A simple tool to edit multiple lines simultaneously.",
+  "version": "0.2",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": ["js/main.js"]
+    }
+  },
+  "icons": {
+    "16": "assets/icon16.png",
+    "128": "assets/icon128.png"
+  }
+}
